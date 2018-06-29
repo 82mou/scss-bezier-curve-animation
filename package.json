@@ -1,0 +1,25 @@
+{
+  "name": "scss-bezier-curve-animation",
+  "version": "1.0.0",
+  "description": "scssでベジェ曲線の関数を管理",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss-build": "webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/82mou/scss-bezier-curve-animation.git"
+  },
+  "author": "82mou",
+  "license": "MIT",
+  "homepage": "https://github.com/82mou/scss-bezier-curve-animation#readme",
+  "devDependencies": {
+    "css-loader": "^0.28.11",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.3",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.13.0",
+    "webpack-cli": "^3.0.8"
+  }
+}
