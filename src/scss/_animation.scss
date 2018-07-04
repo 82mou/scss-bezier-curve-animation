@@ -1,0 +1,255 @@
+.infographics {
+	position: absolute;
+	top: 40px;
+	left: 50%;
+	transform: translateX(-50%);
+	border: 6px solid #e6e5ea;
+	background-color: #fff;
+	height: 400px;
+	width: 600px;
+}
+
+// 現在ご利用中のお客様
+.infographics__user {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+.infographics__user__people {
+	position: absolute;
+	top: 0;
+}
+.infographics__user__people__item {
+	position: absolute;
+	border-radius: 50%;
+	&.infographics__user__people__item--1 {
+		top: -30px;
+		left: -30px;
+		width: 20px;
+		height: 20px;
+		background-color: #FCB374;
+		transform: translate(0px, 0px);
+		animation: infographics-user-1 6s linear 0s infinite;
+	}
+	&.infographics__user__people__item--2 {
+		top: -30px;
+		left: 0;
+		width: 15px;
+		height: 15px;
+		background-color: #FFF4D8;
+		transform: translate(0px, 0px);
+		animation: infographics-user-2 5s linear 4s infinite;
+	}
+	&.infographics__user__people__item--3 {
+		top: -30px;
+		left: 30px;
+		width: 10px;
+		height: 10px;
+		background-color: #B0413E;
+		transform: translate(0px, 0px);
+		animation: infographics-user-3 5s linear 3s infinite;
+	}
+	&.infographics__user__people__item--4 {
+		top: -30px;
+		left: 60px;
+		width: 30px;
+		height: 30px;
+		background-color: #548687;
+		transform: translate(0px, 0px);
+		animation: infographics-user-4 6s linear 4s infinite;
+	}
+	&.infographics__user__people__item--5 {
+		top: -30px;
+		left: 90px;
+		width: 5px;
+		height: 5px;
+		background-color: #FCB374;
+		transform: translate(0px, 0px);
+		animation: infographics-user-5 5s linear 2s infinite;
+	}
+	&.infographics__user__people__item--6 {
+		top: -30px;
+		left: 510px;
+		width: 15px;
+		height: 15px;
+		background-color: #FFF4D8;
+		transform: translate(0px, 0px);
+		animation: infographics-user-6 6s linear 1s infinite;
+	}
+	&.infographics__user__people__item--7 {
+		top: -30px;
+		left: 540px;
+		width: 8px;
+		height: 8px;
+		background-color: #B0413E;
+		transform: translate(0px, 0px);
+		animation: infographics-user-7 6s linear 3s infinite;
+	}
+	&.infographics__user__people__item--8 {
+		top: -30px;
+		left: 570px;
+		width: 20px;
+		height: 20px;
+		background-color: #548687;
+		transform: translate(0px, 0px);
+		animation: infographics-user-8 5s linear 2.5s infinite;
+	}
+	&.infographics__user__people__item--9 {
+		top: -30px;
+		left: 600px;
+		width: 12px;
+		height: 12px;
+		background-color: #FCB374;
+		transform: translate(0px, 0px);
+		animation: infographics-user-9 6s linear 3.5s infinite;
+	}
+	&.infographics__user__people__item--10 {
+		top: -30px;
+		left: 630px;
+		width: 25px;
+		height: 25px;
+		background-color: #FFF4D8;
+		transform: translate(0px, 0px);
+		animation: infographics-user-10 6s linear 4.5s infinite;
+	}
+}
+.infographics__user__container {
+	position: absolute;
+	top: 300px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 200px;
+	height: 150px;
+	background-color: #472F2F;
+}
+
+@keyframes infographics-user-1 {
+	$startX: 0; // 開始位置X
+	$startY: 0; // 開始位置Y
+	$ctrlX: 220; // 制御点X
+	$ctrlY: 100; // 制御点Y
+	$endX: 240; // 終了位置X
+	$endY: 330; // 終了位置Y
+	@include infographics-keyframes($startX, $startY, $ctrlX, $ctrlY, $endX, $endY);
+}
+
+@keyframes infographics-user-2 {
+	$startX: 0; // 開始位置X
+	$startY: 0; // 開始位置Y
+	$ctrlX: 200; // 制御点X
+	$ctrlY: 130; // 制御点Y
+	$endX: 220; // 終了位置X
+	$endY: 330; // 終了位置Y
+	@include infographics-keyframes($startX, $startY, $ctrlX, $ctrlY, $endX, $endY);
+}
+
+@keyframes infographics-user-3 {
+	$startX: 0; // 開始位置X
+	$startY: 0; // 開始位置Y
+	$ctrlX: 200; // 制御点X
+	$ctrlY: 150; // 制御点Y
+	$endX: 220; // 終了位置X
+	$endY: 330; // 終了位置Y
+	@include infographics-keyframes($startX, $startY, $ctrlX, $ctrlY, $endX, $endY);
+}
+
+@keyframes infographics-user-4 {
+	$startX: 0; // 開始位置X
+	$startY: 0; // 開始位置Y
+	$ctrlX: 180; // 制御点X
+	$ctrlY: 150; // 制御点Y
+	$endX: 200; // 終了位置X
+	$endY: 330; // 終了位置Y
+	@include infographics-keyframes($startX, $startY, $ctrlX, $ctrlY, $endX, $endY);
+}
+
+@keyframes infographics-user-5 {
+	$startX: 0; // 開始位置X
+	$startY: 0; // 開始位置Y
+	$ctrlX: 180; // 制御点X
+	$ctrlY: 150; // 制御点Y
+	$endX: 200; // 終了位置X
+	$endY: 330; // 終了位置Y
+	@include infographics-keyframes($startX, $startY, $ctrlX, $ctrlY, $endX, $endY);
+}
+
+@keyframes infographics-user-6 {
+	$startX: 0; // 開始位置X
+	$startY: 0; // 開始位置Y
+	$ctrlX: -190; // 制御点X
+	$ctrlY: 150; // 制御点Y
+	$endX: -210; // 終了位置X
+	$endY: 330; // 終了位置Y
+	@include infographics-keyframes($startX, $startY, $ctrlX, $ctrlY, $endX, $endY);
+}
+
+@keyframes infographics-user-7 {
+	$startX: 0; // 開始位置X
+	$startY: 0; // 開始位置Y
+	$ctrlX: -200; // 制御点X
+	$ctrlY: 150; // 制御点Y
+	$endX: -220; // 終了位置X
+	$endY: 330; // 終了位置Y
+	@include infographics-keyframes($startX, $startY, $ctrlX, $ctrlY, $endX, $endY);
+}
+
+@keyframes infographics-user-8 {
+	$startX: 0; // 開始位置X
+	$startY: 0; // 開始位置Y
+	$ctrlX: -230; // 制御点X
+	$ctrlY: 150; // 制御点Y
+	$endX: -250; // 終了位置X
+	$endY: 330; // 終了位置Y
+	@include infographics-keyframes($startX, $startY, $ctrlX, $ctrlY, $endX, $endY);
+}
+
+@keyframes infographics-user-9 {
+	$startX: 0; // 開始位置X
+	$startY: 0; // 開始位置Y
+	$ctrlX: -230; // 制御点X
+	$ctrlY: 50; // 制御点Y
+	$endX: -250; // 終了位置X
+	$endY: 250; // 終了位置Y
+	@include infographics-keyframes($startX, $startY, $ctrlX, $ctrlY, $endX, $endY);
+}
+
+@keyframes infographics-user-10 {
+	$startX: 0; // 開始位置X
+	$startY: 0; // 開始位置Y
+	$ctrlX: -240; // 制御点X
+	$ctrlY: 150; // 制御点Y
+	$endX: -260; // 終了位置X
+	$endY: 330; // 終了位置Y
+	@include infographics-keyframes($startX, $startY, $ctrlX, $ctrlY, $endX, $endY);
+}
+
+@keyframes infographics-user-container {
+	from {
+		transform: scale3d(1, 1, 1);
+	}
+	30% {
+		transform: scale3d(1, 1, 1);
+	}
+	40% {
+		transform: scale3d(1, 1, 1);
+	}
+	45% {
+		transform: scale3d(0.95, 1.05, 1);
+	}
+	50% {
+		transform: scale3d(1.05, 0.95, 1);
+	}
+	55% {
+		transform: scale3d(0.95, 1.05, 1);
+	}
+	60% {
+		transform: scale3d(1, 1, 1);
+	}
+	75% {
+		transform: scale3d(1, 1, 1);
+	}
+	to {
+		transform: scale3d(1, 1, 1);
+	}
+}

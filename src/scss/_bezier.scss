@@ -1,0 +1,79 @@
+@function getPointQBX($t,$x1,$x2,$x3) {
+	$tp: 1 - $t;
+	$x: $t*$t*$x3 + 2*$t*$tp*$x2 + $tp*$tp*$x1;
+
+	@return $x + px;
+}
+
+@function getPointQBY($t,$y1,$y2,$y3) {
+	$tp: 1 - $t;
+	$y: $t*$t*$y3 + 2*$t*$tp*$y2 + $tp*$tp*$y1;
+
+	@return $y + px;
+}
+
+@mixin infographics-keyframes($startX, $startY, $ctrlX, $ctrlY, $endX, $endY) {
+	from {
+		transform: translate(getPointQBX(0, $startX, $ctrlX, $endX), getPointQBY(0, $startY, $ctrlY, $endY));
+	}
+	5% {
+		transform: translate(getPointQBX(0.05, $startX, $ctrlX, $endX), getPointQBY(0.05, $startY, $ctrlY, $endY));
+	}
+	10% {
+		transform: translate(getPointQBX(0.1, $startX, $ctrlX, $endX), getPointQBY(0.1, $startY, $ctrlY, $endY));
+	}
+	15% {
+		transform: translate(getPointQBX(0.15, $startX, $ctrlX, $endX), getPointQBY(0.15, $startY, $ctrlY, $endY));
+	}
+	20% {
+		transform: translate(getPointQBX(0.2, $startX, $ctrlX, $endX), getPointQBY(0.2, $startY, $ctrlY, $endY));
+	}
+	25% {
+		transform: translate(getPointQBX(0.25, $startX, $ctrlX, $endX), getPointQBY(0.25, $startY, $ctrlY, $endY));
+	}
+	30% {
+		transform: translate(getPointQBX(0.3, $startX, $ctrlX, $endX), getPointQBY(0.3, $startY, $ctrlY, $endY));
+	}
+	35% {
+		transform: translate(getPointQBX(0.35, $startX, $ctrlX, $endX), getPointQBY(0.35, $startY, $ctrlY, $endY));
+	}
+	40% {
+		transform: translate(getPointQBX(0.4, $startX, $ctrlX, $endX), getPointQBY(0.4, $startY, $ctrlY, $endY));
+	}
+	45% {
+		transform: translate(getPointQBX(0.45, $startX, $ctrlX, $endX), getPointQBY(0.45, $startY, $ctrlY, $endY));
+	}
+	50% {
+		transform: translate(getPointQBX(0.5, $startX, $ctrlX, $endX), getPointQBY(0.5, $startY, $ctrlY, $endY));
+	}
+	55% {
+		transform: translate(getPointQBX(0.55, $startX, $ctrlX, $endX), getPointQBY(0.55, $startY, $ctrlY, $endY));
+	}
+	60% {
+		transform: translate(getPointQBX(0.6, $startX, $ctrlX, $endX), getPointQBY(0.6, $startY, $ctrlY, $endY));
+	}
+	65% {
+		transform: translate(getPointQBX(0.65, $startX, $ctrlX, $endX), getPointQBY(0.65, $startY, $ctrlY, $endY));
+	}
+	70% {
+		transform: translate(getPointQBX(0.7, $startX, $ctrlX, $endX), getPointQBY(0.7, $startY, $ctrlY, $endY));
+	}
+	75% {
+		transform: translate(getPointQBX(0.75, $startX, $ctrlX, $endX), getPointQBY(0.75, $startY, $ctrlY, $endY));
+	}
+	80% {
+		transform: translate(getPointQBX(0.8, $startX, $ctrlX, $endX), getPointQBY(0.8, $startY, $ctrlY, $endY));
+	}
+	85% {
+		transform: translate(getPointQBX(0.85, $startX, $ctrlX, $endX), getPointQBY(0.85, $startY, $ctrlY, $endY));
+	}
+	90% {
+		transform: translate(getPointQBX(0.9, $startX, $ctrlX, $endX), getPointQBY(0.9, $startY, $ctrlY, $endY));
+	}
+	95% {
+		transform: translate(getPointQBX(0.95, $startX, $ctrlX, $endX), getPointQBY(0.95, $startY, $ctrlY, $endY));
+	}
+	to {
+		transform: translate(getPointQBX(1, $startX, $ctrlX, $endX), getPointQBY(1, $startY, $ctrlY, $endY));
+	}
+}
